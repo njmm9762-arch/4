@@ -1,6 +1,6 @@
 body{
   margin:0;
-  font-family:Tahoma, Arial;
+  font-family:Tahoma,Arial;
   background:#050814;
   color:#fff;
 }
@@ -8,17 +8,15 @@ body{
 header{
   text-align:center;
   padding:20px;
-  background:linear-gradient(90deg,#0b1d4d,#020b2c);
+  background:#0b102a;
 }
 
-h1,h2{
-  color:gold;
-}
+h1,h2{color:gold}
 
 .players{
   padding:20px;
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:15px;
 }
 
@@ -26,28 +24,26 @@ h1,h2{
   background:#0e1533;
   padding:15px;
   border-radius:12px;
-  box-shadow:0 0 15px rgba(255,215,0,0.2);
+  box-shadow:0 0 12px rgba(255,215,0,.25);
 }
 
-.player-card .code{
-  color:#00ffcc;
-  font-size:18px;
-}
+.code{color:#00ffcc;font-size:18px}
 
 .whatsapp{
-  display:inline-block;
+  display:block;
   margin-top:10px;
   background:#25d366;
   color:#000;
-  padding:8px 12px;
+  padding:8px;
   border-radius:6px;
+  text-align:center;
   text-decoration:none;
 }
 
 .comments{
-  padding:20px;
   max-width:900px;
   margin:auto;
+  padding:20px;
 }
 
 .add-comment{
@@ -63,30 +59,23 @@ h1,h2{
 }
 
 .add-comment button{
-  padding:10px 15px;
+  padding:10px;
+  background:gold;
   border:none;
   border-radius:6px;
-  background:gold;
   cursor:pointer;
 }
 
 .comment{
   background:#0c1433;
-  margin-top:10px;
   padding:10px;
+  margin-top:8px;
   border-radius:8px;
 }
 
-.comment .name{
-  color:gold;
-}
+.like{cursor:pointer;color:#00ffcc}
 
-.like{
-  cursor:pointer;
-  color:#00ffcc;
-}
-
-/* شاشة الترحيب */
+/* ===== شاشة الترحيب (نفس اللي إنت بعته) ===== */
 .welcome-screen{
   position:fixed;
   inset:0;
@@ -102,5 +91,23 @@ h1,h2{
   font-size:24px;
   color:gold;
   text-align:center;
+  text-shadow:0 0 8px #fff,0 0 12px gold;
   margin-bottom:20px;
+  animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+  0%{text-shadow:0 0 4px #fff,0 0 8px gold;}
+  50%{text-shadow:0 0 10px #fff,0 0 20px gold;}
+  100%{text-shadow:0 0 4px #fff,0 0 8px gold;}
+}
+
+.welcome-screen button{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
+  background:gold;
+  cursor:pointer;
+  box-shadow:0 0 10px gold;
 }
