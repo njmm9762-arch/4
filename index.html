@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>PMGC Championship</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="style.css">
 
 <!-- Firebase -->
@@ -17,8 +16,7 @@
 <!-- شاشة الترحيب -->
 <div class="welcome-screen" id="welcomeScreen">
   <div class="welcome-text">
-    Welcome to PMGC Championship
-    <br>
+    Welcome to PMGC Championship<br>
     <small>تحية من النجم ⭐</small>
   </div>
   <button onclick="enterSite()">دخول</button>
@@ -28,35 +26,14 @@
   <h1>بطولة PMGC</h1>
 </header>
 
-<section class="players">
-  <h2>اللاعبون المقبولون</h2>
-
-  <div class="player-card">
-    <h3>طوخي</h3>
-    <p>ID: 51595481053</p>
-    <p class="code">CODE: 8472</p>
-    <a class="whatsapp" href="https://wa.me/201211056530?text=تم%20قبولي%20في%20بطولة%20PMGC%20الكود%208472" target="_blank">
-      التواصل واتساب
-    </a>
-  </div>
-
-  <div class="player-card">
-    <h3>معاذ</h3>
-    <p>ID: 51429738642</p>
-    <p class="code">CODE: 2563</p>
-    <a class="whatsapp" href="https://wa.me/201211056530?text=تم%20قبولي%20في%20بطولة%20PMGC%20الكود%202563" target="_blank">
-      التواصل واتساب
-    </a>
-  </div>
-
-</section>
+<section class="players" id="players"></section>
 
 <section class="comments">
   <h2>تعليقات البطولة</h2>
 
   <div class="add-comment">
-    <input type="text" id="username" placeholder="اسمك">
-    <input type="text" id="commentText" placeholder="اكتب تعليقك">
+    <input id="username" placeholder="اسمك">
+    <input id="commentText" placeholder="اكتب تعليقك">
     <button onclick="addComment()">نشر</button>
   </div>
 
